@@ -1,0 +1,23 @@
+name = "dtf-orders"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "dtf-orders-db"
+database_id = "5627948c-2f71-4b16-a848-42df9aae9bc7"
+
+# R2 Bucket
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "dtf"
+
+# Environment variables (set these in Cloudflare Dashboard)
+# ADMIN_USER - Admin username
+# ADMIN_PASSWORD - Admin password  
+# R2_ACCESS_KEY_ID - R2 S3 API access key
+# R2_SECRET_ACCESS_KEY - R2 S3 API secret
+# R2_ENDPOINT - R2 S3 API endpoint (https://<account_id>.r2.cloudflarestorage.com)
+# SESSION_SECRET - Secret for signing session cookies

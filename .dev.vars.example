@@ -1,0 +1,16 @@
+# Cloudflare Environment Variables (Local Development)
+# Copy this file to .dev.vars and fill in your values
+
+# Admin credentials
+ADMIN_USER=admin
+ADMIN_PASSWORD=changeme123
+
+# Session secret (generate a random string)
+SESSION_SECRET=your-super-secret-key-here-change-in-production
+
+# R2 S3 API credentials
+# Get these from Cloudflare Dashboard > R2 > Manage R2 API Tokens
+R2_BUCKET_NAME=example
+R2_ENDPOINT=https://YOUR_ACCOUNT_ID.r2.cloudflarestorage.com
+R2_ACCESS_KEY_ID=your-r2-access-key-id
+R2_SECRET_ACCESS_KEY=your-r2-secret-access-key
