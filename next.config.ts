@@ -7,6 +7,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 const nextConfig: NextConfig = {
+  output: "standalone",
   // Required for Cloudflare Pages
   experimental: {
     // Enable server actions for form handling
